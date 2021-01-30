@@ -1,0 +1,23 @@
+baseURL = "https://danops.tech"
+languageCode = "en-us"
+title = "DanOps"
+theme = "m10c"
+canonifyURLs = true
+
+[params]
+author = "DanOps"
+description = "A focus on the Ops of DevOps"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/danopstech"
+  [[params.social]]
+    name = "youtube"
+    url = "https://www.youtube.com/channel/UC_mLpjdpBrrR57y6uhRyTSQ"
+
+[params.style]
+  darkestColor = "#242930"
+  darkColor = "#353b43"
+  # lightColor = "#f5e3e0"
+  # lightestColor = "#f5f5f5"
+  primaryColor = "#1CE"
