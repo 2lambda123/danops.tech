@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v1
       with:
           submodules: true
     - name: Setup Hugo
-      uses: ../.github/actions/actions-hugo
+      uses: ./.github/actions/actions-hugo
       with:
           hugo-version: 'latest'
     - name: Clean public directory
@@ -21,7 +21,7 @@ jobs:
     - name: Build
       run: hugo --theme=m10c
     - name: Deploy
-      uses: ../.github/actions/actions-gh-pages
+      uses: ./.github/actions/actions-gh-pages
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
