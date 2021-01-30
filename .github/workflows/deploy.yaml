@@ -13,7 +13,7 @@ jobs:
       with:
           submodules: true
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
+      uses: ./.github/actions/actions-hugo
       with:
           hugo-version: 'latest'
     - name: Clean public directory
@@ -21,7 +21,7 @@ jobs:
     - name: Build
       run: hugo --theme=m10c
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
+      uses: ./.github/actions/actions-gh-pages
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
