@@ -1,4 +1,4 @@
-baseURL = "https://danops.tech/"
+baseURL = "https://www.danops.tech/"
 languageCode = "en-gb"
 title = "DanOps"
 theme = "github-style"
