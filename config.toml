@@ -2,7 +2,7 @@ baseURL = "https://www.danops.tech/"
 languageCode = "en-gb"
 title = "DanOps"
 theme = "github-style"
-googleAnalytics = ""
+googleAnalytics = "G-MR3FCKRPBN"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
