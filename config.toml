@@ -1,3 +1,31 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://danops.tech/"
+languageCode = "en-gb"
+title = "DanOps"
+theme = "github-style"
+googleAnalytics = ""
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[Taxonomies]
+  tag = "tags"
+
+[params]
+  author = "Blog"
+  description = "A focus on the Ops of DevOps"
+  avatar="/images/avatar.jpg"
+  github = "danopstech"
+  #email = ""
+  url = "https://danopstech.com"
+  keywords = "blog, devops, dev, ops, secops"
+  rss = false
+  lastmod = true
+  favicon = "/images/github.png"
+  location = "United Kingdom"
+
+  [[params.links]]
+    title = "YouTube"
+    href = "https://www.youtube.com/channel/UC_mLpjdpBrrR57y6uhRyTSQ"
+    icon = "/images/youtube.png"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
